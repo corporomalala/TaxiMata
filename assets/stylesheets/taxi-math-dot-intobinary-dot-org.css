@@ -332,6 +332,7 @@ body, html { width: 100%; height: 100%; }
 
 .keyboard-math-screen-hr:before { background-color: #eee; }
 .keyboard-math .u-key-button,
+.taskbar-text,
 .u-key.d-colorBlack .u-key-button,
 .u-input:active,
 .u-input.is-active,
@@ -343,10 +344,20 @@ body, html { width: 100%; height: 100%; }
 /*** END COLORS ***/
 
 /*** FONTS ***/
+@font-face{
+    font-family:"Wide Latin";
+    src:url("../../assets/fonts/widelatin.TTF");
+}
+@font-face{
+    font-family:"Impact";
+    src:url("../../assets/fonts/impact.ttf");
+}
+
 .header-menu-title { font-family: "Wide Latin"; }
 body, html { font-family: "Impact"; }
 
-.u-key.d-fontText { font-size: .6em; }
+.u-key.d-fontText {// font-size: .6em; }
+.u-key.d-fontText { font-size: .75em; }
 
 .u-key {
     font-variant: small-caps;
@@ -373,10 +384,11 @@ body, html { font-family: "Impact"; }
 
 /*** UTILITIES ***/
 .u-input.is-delete {
-    width: auto !important;
+    width: 1.5em;
+    padding: 0 .125em;
 }
 .u-input.is-delete .u-input-icon {
-    width: 50%;
+    width: 100%; height: auto;
     text-indent: -9999px;
 }
 .u-input-icon,
@@ -506,6 +518,10 @@ body, html { font-family: "Impact"; }
 
     animation: keyboardHR 2.5s infinite alternate;
 }
+
+.taskbar-text {
+    padding: 0 .5em;
+}
 /*** END COMPONENTS ***/
 
 /*** INTERRACTIVITY ***/
@@ -559,7 +575,7 @@ body, html { font-family: "Impact"; }
 
 /*** ANIMATION ***/
 @keyframes keyboardHR {
-    from { width: 0; }
+    from { width: 40%; }
     to { width: 100%; }
 }
 /*** END ANIMATION ***/
@@ -569,7 +585,8 @@ body, html { font-family: "Impact"; }
 
 .header .u-key-button,
 .taskbar .u-key-button,
-.keyboard-body-content .u-key-button { box-shadow: 3px 3px 7px rgba(136, 165, 191, .48), -3px -3px 7px white; }
+.keyboard-body-content .u-key-button,
+.d-button-light { box-shadow: 3px 3px 7px rgba(136, 165, 191, .48), -3px -3px 7px white; }
 .u-key.d-colorBlack .u-key-button { box-shadow: inset 3px 3px 7px rgba(136, 165, 191, .48), inset -3px -3px 7px #202020; }
 .keyboard-math-screen { box-shadow: none !important; }
 
@@ -613,6 +630,13 @@ body, html { font-family: "Impact"; }
 .keyboard-body-menu .u-key,
 .keyboard-math {
     width: 100%;
+}
+
+.u-toggle-button {
+//    border: 1px solid red;
+}
+.u-toggle-button-title {
+//    border: 1px solid yellow;
 }
 /*** END SANDBOX ***/
 

@@ -105,10 +105,10 @@ function calculateAll() {
 		row = rows[i];
 		if((!row.classList.contains("is-empty")) && (!row.classList.contains("is-deleted"))){
 
-			money = parseInt(row.querySelector(".js-money").innerHTML);
-			people = parseInt(row.querySelector(".js-people").innerHTML);
-			if(row.querySelector(".chkbx4toggle").checked) { taxiFare = inputLongTrip.querySelector(".u-input-box").innerHTML; }
-			else { taxiFare = inputShortTrip.querySelector(".u-input-box").innerHTML; }
+			money = parseInt(jsSanitizeMoney("input", row.querySelector(".js-money").innerHTML));
+			people = parseInt(jsSanitizeMoney("input", row.querySelector(".js-people").innerHTML));
+			if(row.querySelector(".chkbx4toggle").checked) { taxiFare = jsSanitizeMoney("input", inputLongTrip.querySelector(".u-input-box").innerHTML); }
+			else { taxiFare = jsSanitizeMoney("input", inputShortTrip.querySelector(".u-input-box").innerHTML); }
 
 			if((money == null) || (isNaN(money))) { money = 0; }
 			if((people == null) || (isNaN(people))) { people = 0; }
@@ -124,15 +124,27 @@ function calculateAll() {
 			if((change == null) || (isNaN(change))) { change = ""; }
 			if((total == null) || (isNaN(total))) { total = "calculating..."; }
 
-			row.querySelector(".js-change").innerHTML = change;
+			row.querySelector(".js-change").innerHTML = jsSanitizeMoney("output", change);
 		}
 	}
-	tagTotal.innerHTML = total;
+//	tagTotal.innerHTML = total;
+	tagTotal.innerHTML = jsSanitizeMoney("output", total);
 
 }
 function jsToggleClass(className, tagName) {
 	if(tagName.classList.contains(className)) { tagName.classList.remove(className); }
 	else { tagName.classList.add(className); }
+}
+function jsSanitizeMoney(todo, money) {
+	if(todo == "input") {
+		money = money.replace("R", "");
+		money = money.replace("/pp", "");
+	}
+	if (todo == "output") {
+		money = "R" + money;
+	}
+
+	return money;
 }
 
 function keyboardDigitsClicked() {
@@ -155,6 +167,14 @@ function keyboardDigitsClicked() {
 
 	if (mathResultDisplayed === false) {
 		screen.innerHTML += this.innerHTML;
+		if(screen.closest(".u-input")) {
+			if(screen.closest(".u-input").classList.contains("is-money")) {
+				var input = jsSanitizeMoney("input", screen.innerHTML);
+				input += this.innerHTML;
+				screen.innerHTML = jsSanitizeMoney("output", input);
+			}
+		}
+
 	} else if (mathResultDisplayed === true && lastChar === "+" || lastChar === "-" || lastChar === "×" || lastChar === "÷") {
 		mathResultDisplayed = false;
 		screen.innerHTML += this.innerHTML;
