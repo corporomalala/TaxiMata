@@ -11,6 +11,7 @@ var chkbx4calculator = document.querySelector("#chkbx4calculator"),
 	tags4Delete = document.querySelectorAll(".js-delete"),
 	contentsDistance = document.querySelectorAll(".js-toggle"),
 	tagTotal = document.querySelector(".js-total"),
+	tagRefresh = document.querySelector(".js-refresh"),
 	tagAddRow = document.querySelector(".js-add"),
 	rowTemplate = document.querySelector(".js-row.is-template"),
 	screen;
@@ -40,6 +41,7 @@ for (var i = 0; i < chkbxs4prices.length; i++) {
 }
 
 tagAddRow.addEventListener("click", addRow);
+tagRefresh.addEventListener("click", jsRefresh);
 for (var i = 0; i < tags4Delete.length; i++) {
   tags4Delete[i].addEventListener("click", deleteButtonClicked);
 }
@@ -168,9 +170,9 @@ function keyboardDigitsClicked() {
 	if (mathResultDisplayed === false) {
 		screen.innerHTML += this.innerHTML;
 		if(screen.closest(".u-input")) {
-			if(screen.closest(".u-input").classList.contains("is-money")) {
+			if((screen.closest(".u-input").classList.contains("is-money")) || (screen.closest(".u-input").classList.contains("is-shortTrip")) || (screen.closest(".u-input").classList.contains("is-longTrip"))) {
 				var input = jsSanitizeMoney("input", screen.innerHTML);
-				input += this.innerHTML;
+				if(input == "") { input += this.innerHTML; }
 				screen.innerHTML = jsSanitizeMoney("output", input);
 			}
 		}
@@ -285,5 +287,8 @@ function resetTripPrices() {
 function priceToggled() {
 	resetActiveScreens();
 	calculateAll();
+}
+function jsRefresh() {
+	location.reload();
 }
 /*** FUNCTIONS ***/
