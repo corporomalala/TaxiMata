@@ -1,0 +1,592 @@
+*{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-family:inherit;vertical-align:baseline;font-size:1em;font-style:normal;-webkit-font-smoothing:antialiased;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box; user-select:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;tap-highlight-color:transparent;-webkit-tap-highlight-color:transparent;-moz-tap-highlight-color:transparent;-o-tap-highlight-color:transparent;}*, *::before, *::after{-webkit-transition:.5s;-box-transition:.5s;-o-transition:.5s;transition:.5s;}:hover,:active,:focus{outline:0 !important;}html, body{min-height:100%;font-family:sans-serif;font-size:1rem;position:relative;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;padding:0;line-height:1;}article, footer, header, section{display:block;}ol, ul{list-style:none;}a{display:inline-block;text-decoration:none;background-color:transparent;color:initial;}a img{border:none;}a, button, input[type="submit"]{cursor:pointer !important;}button{// background-color:transparent;}img{width:100%;height:auto;}img::selection{fill:none;color:none;display:none;background:none;}input[type="text"], input[type="number"], input[type="search"], input[type="email"], textarea{text-align:left;max-width:100%;}input[type="checkbox"], input[type="radio"]{display:none;}input[type="submit"]{background-color:transparent;}label{display:inline;}textarea{resize:vertical;}
+/*** JEKYLL ***/
+.u-toggle-button.is-longDistance, 
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance1:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance2:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance3:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance4:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance5:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance6:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance7:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance8:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance9:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance10:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance11:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance12:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance13:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance14:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance15:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance16:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance17:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance18:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance19:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance20:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance21:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance22:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance23:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance24:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance25:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance26:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance27:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance28:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance29:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance30:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance31:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance32:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance33:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance34:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance35:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance36:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance37:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance38:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance39:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance40:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance41:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance42:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance43:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance44:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance45:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance46:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance47:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance48:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance49:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance50:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance51:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance52:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance53:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance54:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance55:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance56:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance57:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance58:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance59:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance60:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance61:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance62:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance63:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance64:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance65:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance66:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance67:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance68:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance69:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance70:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance71:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance72:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance73:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance74:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance75:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance76:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance77:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance78:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance79:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance80:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance81:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance82:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance83:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance84:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance85:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance86:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance87:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance88:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance89:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance90:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance91:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance92:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance93:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance94:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance95:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance96:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance97:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance98:checked ~ .u-toggle-button.is-shortDistance,
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-title,
+#chkbx4inputDistance99:checked ~ .u-toggle-button.is-shortDistance,
+.jekyllPlaceholderClass { display: none; }
+.u-toggle-button.is-shortDistance, 
+#chkbx4inputDistance1:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance2:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance3:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance4:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance5:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance6:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance7:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance8:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance9:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance10:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance11:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance12:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance13:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance14:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance15:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance16:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance17:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance18:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance19:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance20:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance21:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance22:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance23:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance24:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance25:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance26:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance27:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance28:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance29:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance30:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance31:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance32:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance33:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance34:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance35:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance36:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance37:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance38:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance39:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance40:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance41:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance42:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance43:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance44:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance45:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance46:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance47:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance48:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance49:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance50:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance51:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance52:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance53:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance54:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance55:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance56:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance57:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance58:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance59:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance60:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance61:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance62:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance63:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance64:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance65:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance66:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance67:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance68:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance69:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance70:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance71:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance72:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance73:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance74:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance75:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance76:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance77:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance78:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance79:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance80:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance81:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance82:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance83:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance84:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance85:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance86:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance87:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance88:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance89:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance90:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance91:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance92:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance93:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance94:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance95:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance96:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance97:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance98:checked ~ .u-toggle-button.is-longDistance,
+#chkbx4inputDistance99:checked ~ .u-toggle-button.is-longDistance,
+.jekyllPlaceholderClass { display: block; }
+/*** END JEKYLL ***/
+/*** CANCEL ***/
+body, html { width: 100%; height: 100%; }
+.content { overflow-y: scroll; }
+/*** END CANCEL ***/
+
+/*** Z-INDEXES ***/
+.content { position: relative; z-index: 10; }
+.u-veil { position: relative; z-index: 20; }
+.keyboard-math { position: relative; z-index: 30; }
+.keyboard-body { position: relative; z-index: 40; }
+/*** END Z-INDEXES ***/
+
+/*** COLORS ***/
+.keyboard-math { background-color: #202020; }
+.header-button,
+.u-key.d-colorBlack .u-key-button,
+.u-input.is-active,
+.u-toggle-button:active,
+.u-toggle-button:focus,
+.u-veil { background-color: #363636; }
+
+.content-row.is-error,
+.content-row.is-error .content-row-change { background-color: #c22; }
+
+.content-row:nth-child(odd),
+.u-key-button {// background-color: #eee;
+//                background: linear-gradient(318.32deg, #c3d1e4 0%, #dde7f3 55%, #d4e0ed 100%); }
+
+.keyboard-body,
+.keyboard-math {// background-color: #eee; }
+.keyboard-math .u-key-button,
+.u-key.to-close .u-key-button,
+.u-key.to-open .u-key-button,
+.u-input:focus,
+.u-input.is-active,
+.u-toggle-button:active,
+.u-toggle-button:focus { color: #eee; }
+
+.content-row-change,
+.header,
+.keyboard-body { background: linear-gradient(318.32deg, #c3d1e4 0%, #dde7f3 55%, #d4e0ed 100%); }
+/*** END COLORS ***/
+
+/*** FONTS ***/
+.u-key.d-fontText { font-size: .6em; }
+
+.u-key {
+    font-variant: small-caps;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.keyboard-body-menu-button {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+/*** END FONTS ***/
+
+/*** MEDIA ***/
+.u-input.is-money .u-input-icon { background-image: url("/assets/images/icon_money_colors.png"); }
+.u-input.is-people .u-input-icon { background-image: url("/assets/images/icon_people_colors.png"); }
+.u-input-icon {
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*** END MEDIA ***/
+
+/*** UTILITIES ***/
+.u-input {
+}
+.u-input-icon,
+.u-input-box {
+    height: 100%;
+}
+.u-input-icon {
+    width: auto; height: 100%;
+}
+.u-input-box {
+    width: 3em;
+}
+
+.u-key {
+    position: relative;
+    padding: .5em;
+}
+.u-key.keyboard-math-screen .u-key-button {
+    position: absolute;
+}
+.u-key-button {
+    display: block;
+    width: 100%; height: 100%;
+}
+.u-key.keyboard-body-menu-button .u-key-button,
+.u-key.keyboard-math-screen .u-key-button {
+    width: 100%; height: 100%;
+}
+
+.u-toggle-button-icon {
+    width: auto; height: 100%;
+}
+.u-toggle-button {
+    position: relative;
+}
+.u-toggle-button-title {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+
+.u-veil {
+    position: absolute; bottom: 0; left: 0;
+    width: 100%; height: 100%;
+    opacity: .3;
+}
+/*** END UTILITIES ***/
+
+/*** COMPONENTS ***/
+    /** COMMONS **/
+    body,
+    .content-row,
+    .header-menu,
+    .keyboard-body,
+    .keyboard-body-content-row,
+    .keyboard-body-menu,
+    .keyboard-math-operators,
+    .header-map-row,
+    .u-input,
+    .u-key,
+    .u-key-button,
+    .d-cssCentered { display: flex; }
+    body,
+    .keyboard-body-menu,
+    .keyboard-body-menu-aside { flex-direction: column; }
+    .keyboard-math-screen,
+    .u-input,
+    .u-key-button,
+    .d-cssCentered { justify-content: center; align-items: center; }
+    body { align-items: flex-end; }
+    .content,
+    .content-row-change,
+    .header-text,
+    .keyboard-body-content-row .u-key,
+    .keyboard-body-menu-button,
+    .keyboard-math-screen,
+    .header-map-row-box { flex: 1; }
+    
+    .u-key-button { border-radius: 5em; }
+
+
+.content,
+.keyboard-body-menu-aside { width: 100%; height: 100%; }
+
+.content-row {
+    padding: .25em 0;
+}
+.content-row-change {
+}
+
+.header {
+    width: 100%;
+}
+
+.header-map,
+.header-map-row {
+    width: 100%;
+}
+.header-map {
+    overflow: hidden !important;
+}
+
+.keyboard {
+    position: relative;
+}
+.keyboard-math {
+    position: absolute;
+}
+.keyboard-math-screen {
+    width: 100% !important;
+}
+/*** END COMPONENTS ***/
+
+/*** INTERRACTIVITY ***/
+.u-input,
+.u-toggle-button,
+.u-key-button { cursor: pointer; }
+
+.u-toggle-button-icon { visibility: hidden; }
+#chkbx4distanceLogo:checked ~ .content .u-toggle-button-icon { visibility: visible; }
+
+.content-row.is-disabled,
+.keyboard-body-menu-aside,
+#chkbx4calculator:checked ~ .keyboard .keyboard-body-menu-button.to-open { display: none; }
+.content-row.is-active,
+#chkbx4calculator:checked ~ .keyboard .keyboard-body-menu-aside { display: flex; }
+
+.header-map,
+.keyboard-veil { height: 0; }
+#chkbx4routes:checked ~ .header .header-map,
+#chkbx4calculator:checked ~ .keyboard-veil { height: 100%; }
+
+.keyboard-math { top: 0; }
+/*** END INTERRACTIVITY ***/
+
+/*** MEDIA QUERIES ***/
+@media (orientation: landscape) {
+    html {
+        border: 9px solid red;
+    }
+}
+.content-row,
+.keyboard-math-screen,
+.u-key,
+.u-toggle-button { height: 25vw; }
+.u-key.is-key4Equal { height: 75vw; }
+#chkbx4calculator:checked ~ .keyboard .keyboard-math { top: -50vw; }
+
+@media screen and (max-width: 15em) {
+
+}
+@media screen and (min-width: 15em) {
+    .content-row,
+    .keyboard-math-screen,
+    .u-key,
+    .u-toggle-button { height: 15vw; }
+    .u-key.is-key4Equal { height: 45vw; }
+    #chkbx4calculator:checked ~ .keyboard .keyboard-math { top: -30vw; }
+}
+/*** END MEDIA QUERIES ***/
+
+/*** DECORATION ***/
+.u-key-button {// box-shadow: 4px 2px 16px rgba(136, 165, 191, .48), -4px -2px 16px white; }
+
+.u-key-button { box-shadow: 3px 3px 7px rgba(136, 165, 191, .48), -3px -3px 7px white; }
+.u-key.d-colorBlack .u-key-button { box-shadow: inset 3px 3px 7px rgba(136, 165, 191, .48), inset -3px -3px 7px #202020; }
+.keyboard-math-screen { box-shadow: none !important; }
+
+#chkbx4routes:checked ~ .header .u-key-button.is-map,
+.u-key-button:hover { box-shadow: inset 3px 3px 7px rgba(136, 165, 191, .48), inset -3px -3px 7px white; }
+.u-key.d-colorBlack .u-key-button:hover {
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, .48),
+                -1px -1px 5px rgba(255, 255, 255, .48),
+                inset 3px 3px 7px rgba(0, 0, 0, .48),
+                inset -1px -1px 5px rgba(255, 255, 255, .48);
+      
+                /*
+    box-shadow: 3px 3px 7px rgba(136, 165, 191, .48),
+    -3px -3px 7px white,
+    inset 3px 3px 7px rgba(136, 165, 191, .48),
+    inset -3px -3px 7px white;
+    */
+}
+
+.u-key-button {// text-shadow: 2px 2px 2px #d6e1ef99, 0 0 0 black, 2px 2px 2px #d6e1ef00; }
+
+.u-key-button {
+//    -webkit-appearance: none;
+//    box-shadow: -10px -10px 15px rgba(255, 255, 255, .5),
+                10px 10px 15px rgba(70, 70, 70, .12);
+//    border: 8px solid #ececec;
+}
+/*** END DECORATION ***/
+
+/*** HACKS ***/
+/*** END HACKS ***/
+
+/*** SANDBOX ***/
+.header-button,
+.keyboard-body-menu,
+.u-key { width: 25%; }
+.content { overflow-y: auto; }
+
+.keyboard,
+.keyboard-body-content,
+.keyboard-body-menu .u-key,
+.keyboard-math {
+    width: 100%;
+}
+/*** END SANDBOX ***/
+
+/*** TO DELETE ***/
+.u-toggle-button-icon {
+//    background-color: purple;
+//    border: 1px solid yellow;
+}
+.u-toggle-button-title {
+//    background-color: green;
+}
+/*** TO DELETE ***/
