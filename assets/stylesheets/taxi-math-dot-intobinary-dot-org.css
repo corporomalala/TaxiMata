@@ -320,7 +320,6 @@ body, html { width: 100%; height: 100%; }
 .u-key.d-colorBlack .u-key-button,
 .u-input.is-active,
 .u-toggle-button:active,
-.u-toggle-button:focus,
 .u-veil { background-color: #363636; }
 
 .content-row.is-error,
@@ -335,10 +334,9 @@ body, html { width: 100%; height: 100%; }
 .keyboard-math .u-key-button,
 .u-key.to-close .u-key-button,
 .u-key.to-open .u-key-button,
-.u-input:focus,
+.u-input:active,
 .u-input.is-active,
-.u-toggle-button:active,
-.u-toggle-button:focus { color: #eee; }
+.u-toggle-button:active { color: #eee; }
 
 .content-row-change,
 .header,
@@ -539,8 +537,8 @@ body, html { width: 100%; height: 100%; }
 .keyboard-math-screen { box-shadow: none !important; }
 
 #chkbx4routes:checked ~ .header .u-key-button.is-map,
-.u-key-button:hover { box-shadow: inset 3px 3px 7px rgba(136, 165, 191, .48), inset -3px -3px 7px white; }
-.u-key.d-colorBlack .u-key-button:hover {
+.u-key-button:active { box-shadow: inset 3px 3px 7px rgba(136, 165, 191, .48), inset -3px -3px 7px white; }
+.u-key.d-colorBlack .u-key-button:active {
     box-shadow: 3px 3px 7px rgba(0, 0, 0, .48),
                 -1px -1px 5px rgba(255, 255, 255, .48),
                 inset 3px 3px 7px rgba(0, 0, 0, .48),
