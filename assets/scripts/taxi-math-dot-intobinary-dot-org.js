@@ -2,10 +2,13 @@
 
 /*** OBJECTS AND VARIABLES */
 var chkbx4calculator = document.querySelector("#chkbx4calculator"),
+	chkbx4trips = document.querySelector("#chkbx4routes"),
+	chkbxs4prices = document.querySelectorAll(".chkbx4toggle"),
 	inputsMoney = document.querySelectorAll(".js-input-money"),
 	inputsPeople = document.querySelectorAll(".js-input-people"),
 	inputShortTrip = document.querySelector(".js-input-shortTrip"),
 	inputLongTrip = document.querySelector(".js-input-longTrip"),
+	tags4Delete = document.querySelectorAll(".js-delete"),
 	contentsDistance = document.querySelectorAll(".js-toggle"),
 	tagTotal = document.querySelector(".js-total"),
 	tagAddRow = document.querySelector(".js-add"),
@@ -31,13 +34,22 @@ for (var i = 0; i < keyboardOperators.length; i++) {
   keyboardOperators[i].addEventListener("click", keyboardOperatorsClicked);
 }
 
+
+for (var i = 0; i < chkbxs4prices.length; i++) {
+	chkbxs4prices[i].addEventListener("change", priceToggled);
+}
+
 tagAddRow.addEventListener("click", addRow);
+for (var i = 0; i < tags4Delete.length; i++) {
+  tags4Delete[i].addEventListener("click", deleteButtonClicked);
+}
 
 keyboardEqual.addEventListener("click", keyboardEqualClicked);
 keyboardDelete.addEventListener("click", keyboardDeleteClicked);
 
 inputShortTrip.addEventListener("click", keyboardScreenChanged);
 inputLongTrip.addEventListener("click", keyboardScreenChanged);
+
 for (var i = 0; i < inputsMoney.length; i++) {
 	inputsMoney[i].addEventListener("click", keyboardScreenChanged);
 }
@@ -85,16 +97,19 @@ function contentsDistanceToggled() {
 function calculateAll() {
 	var change = 0, total = 0,
 		money = 0, people = 0,
-		taxiFare = 15,
+		taxiFare = 0,
 		rows = document.querySelectorAll(".js-row"),
 		row,
 		tagChange;
 	for (var i = 0; i < rows.length; i++) {
 		row = rows[i];
-		if(!row.classList.contains("is-empty")){
+		if((!row.classList.contains("is-empty")) && (!row.classList.contains("is-deleted"))){
 
 			money = parseInt(row.querySelector(".js-money").innerHTML);
 			people = parseInt(row.querySelector(".js-people").innerHTML);
+			if(row.querySelector(".chkbx4toggle").checked) { taxiFare = inputLongTrip.querySelector(".u-input-box").innerHTML; }
+			else { taxiFare = inputShortTrip.querySelector(".u-input-box").innerHTML; }
+
 			if((money == null) || (isNaN(money))) { money = 0; }
 			if((people == null) || (isNaN(people))) { people = 0; }
 			change = parseFloat(money - (people * taxiFare));
@@ -148,12 +163,12 @@ function keyboardDigitsClicked() {
 		screen.innerHTML = "";
 		screen.innerHTML += this.innerHTML;
 	}
-	
-	if(!chkbx4calculator.checked) {
-//		screen.innerHTML = this.innerHTML;
-	}
 
 	calculateAll();
+	
+	if((screen.closest(".js-input-shortTrip")) || (screen.closest(".js-input-longTrip"))) {
+		resetTripPrices();
+	}
 }
 function keyboardOperatorsClicked() {
 	if(chkbx4calculator.checked) {
@@ -204,7 +219,7 @@ function keyboardEqualClicked() {
   while (subtract != -1) {
     keyboardDigits.splice(subtract, 2, keyboardDigits[subtract] - keyboardDigits[subtract + 1]);
     keyboardOperatorss.splice(subtract, 1);
-    subtract = keyboardOperatorss.indexOf("-");
+    subtract = keyboardOperatorss.indexOf("-"); 
   }
 
   var add = keyboardOperatorss.indexOf("+");
@@ -220,5 +235,35 @@ function keyboardEqualClicked() {
 }
 function keyboardDeleteClicked() {
 	screen.innerHTML = "";
+
+	if((screen.closest(".js-input-shortTrip")) || (screen.closest(".js-input-longTrip"))) {
+		resetTripPrices();
+	}
+}
+function deleteButtonClicked() {
+	resetActiveScreens();
+
+	var thisRow = this.closest(".js-row");
+
+	if(!thisRow.classList.contains("is-empty")){
+		thisRow.classList.add("is-deleted");
+	}
+
+	calculateAll();
+}
+function resetTripPrices() {
+	for (var i = 0; i < contentsDistance.length; i++) {
+		if((contentsDistance[i].classList.contains("is-longDistance")) && (screen.closest(".js-input-longTrip"))) {
+			contentsDistance[i].querySelector(".u-toggle-button-title").innerHTML = "R" + screen.innerHTML + "/pp";
+		}
+		if((contentsDistance[i].classList.contains("is-shortDistance")) && (screen.closest(".js-input-shortTrip"))) {
+			contentsDistance[i].querySelector(".u-toggle-button-title").innerHTML = "R" + screen.innerHTML + "/pp";
+		}
+	}
+}
+
+function priceToggled() {
+	resetActiveScreens();
+	calculateAll();
 }
 /*** FUNCTIONS ***/

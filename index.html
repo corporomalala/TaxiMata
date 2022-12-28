@@ -12,16 +12,15 @@
 
     <body>
         <input type="checkbox" id="chkbx4distanceLogo" name="chkbx4distanceLogo" />
-        <input type="checkbox" id="chkbx4routes" name="chkbx4routes" checked />
-        <input type="checkbox" id="chkbx4calculator" name="chkbx4calculator" checked />
+        <input type="checkbox" id="chkbx4routes" name="chkbx4routes" />
+        <input type="checkbox" id="chkbx4calculator" name="chkbx4calculator" />
 
         <section class="header">
 	<div class="header-menu">
-		<div class="u-key d-fontText"><label for="chkbx4routes" class="u-key-button is-map js-header-map">Trips</label></div>
-		<p class="header-text d-cssCentered">Total: <span class="header-text-number js-total"></span></p>
-		<div class="u-key d-fontText"><span class="u-key-button js-add">Add</span></div>
 		<div class="u-key d-fontText"><span class="u-key-button js-refresh">Refresh</span></div>
-	</div>	
+		<h1 class="header-menu-title d-cssCentered">TaxiMata</h1>
+		<div class="u-key d-fontText"><label for="chkbx4routes" class="u-key-button is-map js-trips">Prices</label></div>
+	</div>
 
 	<section class="header-map">
 		<div class="header-map-row">
@@ -37,13 +36,16 @@
 	</section>
 </section>
 
+<section class="taskbar">
+	<p class="taskbar-text d-cssCentered">Paid: <span class="taskbar-text-number js-total"></span></p>
+	<div class="u-key d-fontText d-colorBlack"><span class="u-key-button js-add">Add</span></div>
+</section>
+
 <section class="content">
 	<div class="content-row js-row is-empty">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">1</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -59,22 +61,20 @@
 
 			<label for="chkbx4inputDistance1" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance1" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">2</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -90,22 +90,20 @@
 
 			<label for="chkbx4inputDistance2" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance2" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">3</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -121,22 +119,20 @@
 
 			<label for="chkbx4inputDistance3" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance3" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">4</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -152,22 +148,20 @@
 
 			<label for="chkbx4inputDistance4" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance4" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">5</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -183,22 +177,20 @@
 
 			<label for="chkbx4inputDistance5" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance5" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">6</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -214,22 +206,20 @@
 
 			<label for="chkbx4inputDistance6" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance6" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">7</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -245,22 +235,20 @@
 
 			<label for="chkbx4inputDistance7" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance7" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">8</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -276,22 +264,20 @@
 
 			<label for="chkbx4inputDistance8" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance8" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">9</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -307,22 +293,20 @@
 
 			<label for="chkbx4inputDistance9" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance9" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">10</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -338,22 +322,20 @@
 
 			<label for="chkbx4inputDistance10" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance10" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">11</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -369,22 +351,20 @@
 
 			<label for="chkbx4inputDistance11" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance11" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">12</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -400,22 +380,20 @@
 
 			<label for="chkbx4inputDistance12" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance12" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">13</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -431,22 +409,20 @@
 
 			<label for="chkbx4inputDistance13" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance13" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">14</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -462,22 +438,20 @@
 
 			<label for="chkbx4inputDistance14" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance14" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">15</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -493,22 +467,20 @@
 
 			<label for="chkbx4inputDistance15" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance15" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">16</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -524,22 +496,20 @@
 
 			<label for="chkbx4inputDistance16" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance16" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">17</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -555,22 +525,20 @@
 
 			<label for="chkbx4inputDistance17" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance17" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">18</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -586,22 +554,20 @@
 
 			<label for="chkbx4inputDistance18" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance18" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">19</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -617,22 +583,20 @@
 
 			<label for="chkbx4inputDistance19" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance19" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">20</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -648,22 +612,20 @@
 
 			<label for="chkbx4inputDistance20" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance20" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">21</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -679,22 +641,20 @@
 
 			<label for="chkbx4inputDistance21" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance21" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">22</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -710,22 +670,20 @@
 
 			<label for="chkbx4inputDistance22" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance22" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">23</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -741,22 +699,20 @@
 
 			<label for="chkbx4inputDistance23" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance23" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">24</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -772,22 +728,20 @@
 
 			<label for="chkbx4inputDistance24" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance24" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">25</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -803,22 +757,20 @@
 
 			<label for="chkbx4inputDistance25" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance25" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">26</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -834,22 +786,20 @@
 
 			<label for="chkbx4inputDistance26" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance26" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">27</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -865,22 +815,20 @@
 
 			<label for="chkbx4inputDistance27" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance27" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">28</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -896,22 +844,20 @@
 
 			<label for="chkbx4inputDistance28" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance28" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">29</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -927,22 +873,20 @@
 
 			<label for="chkbx4inputDistance29" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance29" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">30</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -958,22 +902,20 @@
 
 			<label for="chkbx4inputDistance30" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance30" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">31</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -989,22 +931,20 @@
 
 			<label for="chkbx4inputDistance31" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance31" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">32</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1020,22 +960,20 @@
 
 			<label for="chkbx4inputDistance32" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance32" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">33</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1051,22 +989,20 @@
 
 			<label for="chkbx4inputDistance33" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance33" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">34</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1082,22 +1018,20 @@
 
 			<label for="chkbx4inputDistance34" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance34" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">35</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1113,22 +1047,20 @@
 
 			<label for="chkbx4inputDistance35" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance35" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">36</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1144,22 +1076,20 @@
 
 			<label for="chkbx4inputDistance36" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance36" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">37</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1175,22 +1105,20 @@
 
 			<label for="chkbx4inputDistance37" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance37" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">38</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1206,22 +1134,20 @@
 
 			<label for="chkbx4inputDistance38" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance38" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">39</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1237,22 +1163,20 @@
 
 			<label for="chkbx4inputDistance39" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance39" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">40</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1268,22 +1192,20 @@
 
 			<label for="chkbx4inputDistance40" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance40" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">41</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1299,22 +1221,20 @@
 
 			<label for="chkbx4inputDistance41" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance41" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">42</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1330,22 +1250,20 @@
 
 			<label for="chkbx4inputDistance42" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance42" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">43</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1361,22 +1279,20 @@
 
 			<label for="chkbx4inputDistance43" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance43" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">44</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1392,22 +1308,20 @@
 
 			<label for="chkbx4inputDistance44" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance44" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">45</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1423,22 +1337,20 @@
 
 			<label for="chkbx4inputDistance45" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance45" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">46</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1454,22 +1366,20 @@
 
 			<label for="chkbx4inputDistance46" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance46" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">47</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1485,22 +1395,20 @@
 
 			<label for="chkbx4inputDistance47" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance47" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">48</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1516,22 +1424,20 @@
 
 			<label for="chkbx4inputDistance48" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance48" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">49</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1547,22 +1453,20 @@
 
 			<label for="chkbx4inputDistance49" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance49" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">50</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1578,22 +1482,20 @@
 
 			<label for="chkbx4inputDistance50" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance50" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">51</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1609,22 +1511,20 @@
 
 			<label for="chkbx4inputDistance51" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance51" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">52</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1640,22 +1540,20 @@
 
 			<label for="chkbx4inputDistance52" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance52" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">53</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1671,22 +1569,20 @@
 
 			<label for="chkbx4inputDistance53" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance53" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">54</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1702,22 +1598,20 @@
 
 			<label for="chkbx4inputDistance54" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance54" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">55</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1733,22 +1627,20 @@
 
 			<label for="chkbx4inputDistance55" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance55" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">56</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1764,22 +1656,20 @@
 
 			<label for="chkbx4inputDistance56" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance56" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">57</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1795,22 +1685,20 @@
 
 			<label for="chkbx4inputDistance57" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance57" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">58</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1826,22 +1714,20 @@
 
 			<label for="chkbx4inputDistance58" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance58" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">59</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1857,22 +1743,20 @@
 
 			<label for="chkbx4inputDistance59" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance59" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">60</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1888,22 +1772,20 @@
 
 			<label for="chkbx4inputDistance60" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance60" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">61</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1919,22 +1801,20 @@
 
 			<label for="chkbx4inputDistance61" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance61" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">62</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1950,22 +1830,20 @@
 
 			<label for="chkbx4inputDistance62" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance62" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">63</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -1981,22 +1859,20 @@
 
 			<label for="chkbx4inputDistance63" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance63" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">64</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2012,22 +1888,20 @@
 
 			<label for="chkbx4inputDistance64" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance64" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">65</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2043,22 +1917,20 @@
 
 			<label for="chkbx4inputDistance65" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance65" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">66</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2074,22 +1946,20 @@
 
 			<label for="chkbx4inputDistance66" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance66" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">67</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2105,22 +1975,20 @@
 
 			<label for="chkbx4inputDistance67" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance67" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">68</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2136,22 +2004,20 @@
 
 			<label for="chkbx4inputDistance68" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance68" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">69</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2167,22 +2033,20 @@
 
 			<label for="chkbx4inputDistance69" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance69" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">70</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2198,22 +2062,20 @@
 
 			<label for="chkbx4inputDistance70" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance70" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">71</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2229,22 +2091,20 @@
 
 			<label for="chkbx4inputDistance71" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance71" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">72</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2260,22 +2120,20 @@
 
 			<label for="chkbx4inputDistance72" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance72" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">73</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2291,22 +2149,20 @@
 
 			<label for="chkbx4inputDistance73" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance73" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">74</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2322,22 +2178,20 @@
 
 			<label for="chkbx4inputDistance74" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance74" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">75</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2353,22 +2207,20 @@
 
 			<label for="chkbx4inputDistance75" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance75" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">76</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2384,22 +2236,20 @@
 
 			<label for="chkbx4inputDistance76" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance76" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">77</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2415,22 +2265,20 @@
 
 			<label for="chkbx4inputDistance77" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance77" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">78</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2446,22 +2294,20 @@
 
 			<label for="chkbx4inputDistance78" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance78" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">79</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2477,22 +2323,20 @@
 
 			<label for="chkbx4inputDistance79" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance79" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">80</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2508,22 +2352,20 @@
 
 			<label for="chkbx4inputDistance80" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance80" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">81</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2539,22 +2381,20 @@
 
 			<label for="chkbx4inputDistance81" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance81" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">82</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2570,22 +2410,20 @@
 
 			<label for="chkbx4inputDistance82" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance82" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">83</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2601,22 +2439,20 @@
 
 			<label for="chkbx4inputDistance83" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance83" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">84</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2632,22 +2468,20 @@
 
 			<label for="chkbx4inputDistance84" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance84" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">85</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2663,22 +2497,20 @@
 
 			<label for="chkbx4inputDistance85" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance85" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">86</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2694,22 +2526,20 @@
 
 			<label for="chkbx4inputDistance86" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance86" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">87</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2725,22 +2555,20 @@
 
 			<label for="chkbx4inputDistance87" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance87" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">88</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2756,22 +2584,20 @@
 
 			<label for="chkbx4inputDistance88" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance88" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">89</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2787,22 +2613,20 @@
 
 			<label for="chkbx4inputDistance89" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance89" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">90</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2818,22 +2642,20 @@
 
 			<label for="chkbx4inputDistance90" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance90" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">91</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2849,22 +2671,20 @@
 
 			<label for="chkbx4inputDistance91" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance91" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">92</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2880,22 +2700,20 @@
 
 			<label for="chkbx4inputDistance92" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance92" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">93</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2911,22 +2729,20 @@
 
 			<label for="chkbx4inputDistance93" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance93" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">94</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2942,22 +2758,20 @@
 
 			<label for="chkbx4inputDistance94" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance94" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">95</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -2973,22 +2787,20 @@
 
 			<label for="chkbx4inputDistance95" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance95" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">96</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -3004,22 +2816,20 @@
 
 			<label for="chkbx4inputDistance96" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance96" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">97</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -3035,22 +2845,20 @@
 
 			<label for="chkbx4inputDistance97" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance97" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">98</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -3066,22 +2874,20 @@
 
 			<label for="chkbx4inputDistance98" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance98" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 
 		<div class="content-row-change js-change d-cssCentered"></div>
 	</div>
 	<div class="content-row js-row is-empty is-disabled">
-		<!--
-		<div class="u-input">
-			<span class="u-input-box d-cssCentered">99</span>
+		<div class="u-input is-delete">
+			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon js-delete" />
 		</div>
-	-->
 
 		<div class="u-input js-input-money is-money" tabindex="0">
 			<img src="/assets/images/placeholder-1x1.png" class="u-input-icon" />
@@ -3097,11 +2903,11 @@
 
 			<label for="chkbx4inputDistance99" class="u-toggle-button js-toggle is-shortDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R10 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R10/pp</span>
 			</label>
 			<label for="chkbx4inputDistance99" class="u-toggle-button js-toggle is-longDistance">
 				<img src="/assets/images/placeholder-4x3.png" class="u-toggle-button-icon" />
-				<span class="u-toggle-button-title d-cssCentered">R15 pp</span>
+				<span class="u-toggle-button-title d-cssCentered">R15/pp</span>
 			</label>
 		</div>
 

@@ -317,6 +317,7 @@ body, html { width: 100%; height: 100%; }
 /*** COLORS ***/
 .keyboard-math { background-color: #202020; }
 .header-button,
+.taskbar,
 .u-key.d-colorBlack .u-key-button,
 .u-input.is-active,
 .u-toggle-button:active,
@@ -342,11 +343,14 @@ body, html { width: 100%; height: 100%; }
 /*** END COLORS ***/
 
 /*** FONTS ***/
+.header-menu-title { font-family: "Wide Latin"; }
+body, html { font-family: "Impact"; }
+
 .u-key.d-fontText { font-size: .6em; }
 
 .u-key {
     font-variant: small-caps;
-    font-weight: bold;
+//    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -357,8 +361,9 @@ body, html { width: 100%; height: 100%; }
 /*** END FONTS ***/
 
 /*** MEDIA ***/
-.u-input.is-money .u-input-icon { background-image: url("/assets/images/icon_money_colors.png"); }
-.u-input.is-people .u-input-icon { background-image: url("/assets/images/icon_people_colors.png"); }
+.u-input.is-money .u-input-icon { background-image: url("/assets/images/icon_money_mono.png"); }
+.u-input.is-people .u-input-icon { background-image: url("/assets/images/icon_people_mono.png"); }
+.u-input.is-delete .u-input-icon { background-image: url("/assets/images/icon_delete_mono.png"); }
 .u-input-icon {
     background-size: 90%;
     background-repeat: no-repeat;
@@ -367,6 +372,13 @@ body, html { width: 100%; height: 100%; }
 /*** END MEDIA ***/
 
 /*** UTILITIES ***/
+.u-input.is-delete {
+    width: auto !important;
+}
+.u-input.is-delete .u-input-icon {
+    width: 50%;
+    text-indent: -9999px;
+}
 .u-input-icon,
 .u-input-box {
     height: 100%;
@@ -375,7 +387,7 @@ body, html { width: 100%; height: 100%; }
     width: auto; height: 100%;
 }
 .u-input-box {
-    width: 3em;
+    width: 2.5em;
 }
 
 .u-key {
@@ -422,6 +434,7 @@ body, html { width: 100%; height: 100%; }
     .keyboard-body-menu,
     .keyboard-math-operators,
     .header-map-row,
+    .taskbar,
     .u-input,
     .u-key,
     .u-key-button,
@@ -433,14 +446,16 @@ body, html { width: 100%; height: 100%; }
     .u-input,
     .u-key-button,
     .d-cssCentered { justify-content: center; align-items: center; }
+    .taskbar-text { justify-content: flex-start; }
     body { align-items: flex-end; }
     .content,
     .content-row-change,
-    .header-text,
+    .header-map-row-box,
+    .header-menu-title,
     .keyboard-body-content-row .u-key,
     .keyboard-body-menu-button,
     .keyboard-math-screen,
-    .header-map-row-box { flex: 1; }
+    .taskbar-text { flex: 1; }
     
     .u-key-button { border-radius: 5em; }
 
@@ -449,12 +464,14 @@ body, html { width: 100%; height: 100%; }
 .keyboard-body-menu-aside { width: 100%; height: 100%; }
 
 .content-row {
-    padding: .25em 0;
+//    padding: .25em 0;
+    overflow: hidden;
 }
 .content-row-change {
 }
 
-.header {
+.header,
+.taskbar {
     width: 100%;
 }
 
@@ -513,11 +530,12 @@ body, html { width: 100%; height: 100%; }
 .keyboard-math { top: 0; }
 /*** END INTERRACTIVITY ***/
 
+/*** SCRIPTS ***/
+.content-row.is-deleted { height: 0; }
+/*** END SCRIPTS ***/
+
 /*** MEDIA QUERIES ***/
 @media (orientation: landscape) {
-    html {
-        border: 9px solid red;
-    }
 }
 .content-row,
 .keyboard-math-screen,
@@ -550,6 +568,7 @@ body, html { width: 100%; height: 100%; }
 .u-key-button {// box-shadow: 4px 2px 16px rgba(136, 165, 191, .48), -4px -2px 16px white; }
 
 .header .u-key-button,
+.taskbar .u-key-button,
 .keyboard-body-content .u-key-button { box-shadow: 3px 3px 7px rgba(136, 165, 191, .48), -3px -3px 7px white; }
 .u-key.d-colorBlack .u-key-button { box-shadow: inset 3px 3px 7px rgba(136, 165, 191, .48), inset -3px -3px 7px #202020; }
 .keyboard-math-screen { box-shadow: none !important; }
@@ -598,11 +617,4 @@ body, html { width: 100%; height: 100%; }
 /*** END SANDBOX ***/
 
 /*** TO DELETE ***/
-.u-toggle-button-icon {
-//    background-color: purple;
-//    border: 1px solid yellow;
-}
-.u-toggle-button-title {
-//    background-color: green;
-}
 /*** TO DELETE ***/
