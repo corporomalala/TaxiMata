@@ -276,10 +276,10 @@ function deleteButtonClicked() {
 function resetTripPrices() {
 	for (var i = 0; i < contentsDistance.length; i++) {
 		if((contentsDistance[i].classList.contains("is-longDistance")) && (screen.closest(".js-input-longTrip"))) {
-			contentsDistance[i].querySelector(".u-toggle-button-title").innerHTML = "R" + screen.innerHTML + "/pp";
+			contentsDistance[i].querySelector(".u-toggle-button-title").innerHTML = screen.innerHTML + "/pp";
 		}
 		if((contentsDistance[i].classList.contains("is-shortDistance")) && (screen.closest(".js-input-shortTrip"))) {
-			contentsDistance[i].querySelector(".u-toggle-button-title").innerHTML = "R" + screen.innerHTML + "/pp";
+			contentsDistance[i].querySelector(".u-toggle-button-title").innerHTML = screen.innerHTML + "/pp";
 		}
 	}
 }
