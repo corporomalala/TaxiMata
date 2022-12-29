@@ -359,8 +359,10 @@ body, html { width: 100%; height: 100%; }
 body, html { font-family: "Impact"; }
 
 .u-key.d-fontText {// font-size: .6em; }
+.ads-text,
 .u-key.d-fontText { font-size: .75em; }
 
+.ads-text,
 .u-key {
     font-variant: small-caps;
 //    font-weight: bold;
@@ -475,6 +477,22 @@ body, html { font-family: "Impact"; }
     
     .u-key-button { border-radius: 5em; }
 
+
+.ads {
+    position: relative;
+    border-width: .25em 0 0 0;
+    border-style: solid; border-color: #363636;
+    background-color: #eee;
+}
+.ads-text {
+    position: absolute; top: 0; right: .5em;
+    display: inline-block;
+    padding: .25em .5em;
+    
+    border-radius: 0 0 .25em .25em;
+    background-color: #363636;
+    color: #eee;
+}
 
 .content,
 .keyboard-body-menu-aside { width: 100%; height: 100%; }
