@@ -602,6 +602,19 @@ body, html { font-family: "Impact"; }
     .u-key.is-key4Equal { height: 45vw; }
     #chkbx4calculator:checked ~ .keyboard .keyboard-math { top: -30vw; }
 }
+@media screen and (min-width: 40em) {
+    .content-row,
+    .keyboard-math-screen,
+    .u-key,
+    .u-toggle-button { height: 4em; }
+    .u-key.is-key4Equal { height: 12em; }
+    #chkbx4calculator:checked ~ .keyboard .keyboard-math { top: -8em; }
+
+    body {
+        border-width: 0 .25em .25em .25em;
+        border-style: solid; border-color: #363636;
+    }
+}
 /*** END MEDIA QUERIES ***/
 
 /*** ANIMATION ***/
@@ -648,6 +661,10 @@ body, html { font-family: "Impact"; }
 /*** END DECORATION ***/
 
 /*** HACKS ***/
+body { 
+    max-width: 40em;
+    margin: 0 auto;
+}
 /*** END HACKS ***/
 
 /*** SANDBOX ***/
