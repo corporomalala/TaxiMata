@@ -316,6 +316,7 @@ body, html { width: 100%; height: 100%; }
 
 /*** COLORS ***/
 .keyboard-math { background-color: #202020; }
+.bookmark,
 .header-button,
 .taskbar,
 .u-key.d-colorBlack .u-key-button,
@@ -333,6 +334,7 @@ body, html { width: 100%; height: 100%; }
 
 .keyboard-math-screen-hr:before,
 .u-input.header-map-row-box.is-active .u-input-hr:before { background-color: #eee; }
+.bookmark,
 .keyboard-math .u-key-button,
 .taskbar-text,
 .u-key.d-colorBlack .u-key-button,
@@ -355,12 +357,14 @@ body, html { width: 100%; height: 100%; }
     src:url("../../assets/fonts/impact.ttf");
 }
 
+.bookmark-text,
 .header-menu-title { font-family: "Wide Latin"; }
 body, html { font-family: "Impact"; }
 
 .u-key.d-fontText {// font-size: .6em; }
 .ads-text,
 .u-key.d-fontText { font-size: .75em; }
+.bookmark-text { font-size: .6em; }
 
 .ads-text,
 .u-key {
@@ -492,6 +496,10 @@ body, html { font-family: "Impact"; }
     border-radius: 0 0 .25em .25em;
     background-color: #363636;
     color: #eee;
+}
+
+.bookmark {
+    padding: .25em 0 0;
 }
 
 .content,

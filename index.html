@@ -5,9 +5,19 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="stylesheet" href="/assets/stylesheets/taxi-math-dot-intobinary-dot-org.css" />
+		<meta name="msapplication-TitleColor" content="#ffffff" />
+		<meta name="msapplication-TitleImage" content="/favicon.png" />
+		<meta name="theme-color" content="#ffffff" />
 
 		<title>TaxiMata by Corporo Malala</title>
+		<meta name="description" content="TaxiMata... taxi math has never been easier!" />
+
+        <link rel="stylesheet" href="/assets/stylesheets/taxi-math-dot-intobinary-dot-org.css" />
+
+		<link rel="manifest" href="manifest.webmanifest" />
+		<link rel="manifest" href="manifest.json" />
+
+		<meta name="author" content="Corporo Malala" />
     </head>
 
     <body>
@@ -15,15 +25,17 @@
         <input type="checkbox" id="chkbx4routes" name="chkbx4routes" />
         <input type="checkbox" id="chkbx4calculator" name="chkbx4calculator" />
 
-        <a class="ads" title="To advertise here, email: taximata@corporomalala.com.">
+        <a class="bookmark"><marquee class="bookmark-text" scrollamount="4">Click&nbsp;&nbsp;here&nbsp;&nbsp;to&nbsp;&nbsp;add&nbsp;&nbsp;Taximata&nbsp;&nbsp;to&nbsp;&nbsp;your&nbsp;&nbsp;apps'&nbsp;&nbsp;homescreen.</marquee></a>
+
+<a class="ads">
 	<span class="ads-text">ADS</span>
-	<img src="/assets/images/placeholder-7x1.png" class="ads-img" />
+	<img src="/assets/images/placeholder-7x1.png" class="ads-img" title="To advertise here, email: taximata@corporomalala.com." />
 </a>
 
 <section class="header">
 	<div class="header-menu">
 		<div class="u-key d-fontText"><span class="u-key-button js-refresh">Refresh</span></div>
-		<h1 class="header-menu-title d-cssCentered" title="TaxiMata by Corporo Malala">TaxiMata</h1>
+		<h1 class="header-menu-title d-cssCentered">TaxiMata</h1>
 		<div class="u-key d-fontText"><label for="chkbx4routes" class="u-key-button is-map js-trips">Prices</label></div>
 	</div>
 
@@ -2974,5 +2986,16 @@
     	<span class="keyboard-veil u-veil"></span>
 
         <script src="/assets/scripts/taxi-math-dot-intobinary-dot-org.js" type="module"></script>
+        <script>
+            if("serviceWorker" in navigator){
+                console.log("Will the service worker register?");
+                navigator.serviceWorker.register("service-worker.js")
+                    .then(function(reg) {
+                        console.log("Yes, it did.");
+                    }).catch(function(err) {
+                        console.log("No it didn't. This happened:", err);
+                    });
+            }
+        </script>
     </body>
 </html>
