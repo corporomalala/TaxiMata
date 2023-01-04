@@ -673,6 +673,9 @@ body {
     max-width: 40em;
     margin: 0 auto;
 }
+.is-hidden {
+    display: none !important;
+}
 /*** END HACKS ***/
 
 /*** SANDBOX ***/

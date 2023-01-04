@@ -32,7 +32,7 @@
         <input type="checkbox" id="chkbx4routes" name="chkbx4routes" />
         <input type="checkbox" id="chkbx4calculator" name="chkbx4calculator" />
 
-        <a class="bookmark"><marquee class="bookmark-text" scrollamount="4">Click&nbsp;&nbsp;here&nbsp;&nbsp;to&nbsp;&nbsp;add&nbsp;&nbsp;Taximata&nbsp;&nbsp;to&nbsp;&nbsp;your&nbsp;&nbsp;apps'&nbsp;&nbsp;homescreen.</marquee></a>
+        <a class="bookmark js-bookmark"><marquee class="bookmark-text" scrollamount="4">Click&nbsp;&nbsp;here&nbsp;&nbsp;to&nbsp;&nbsp;install&nbsp;&nbsp;Taximata&nbsp;&nbsp;to&nbsp;&nbsp;your&nbsp;&nbsp;phone.</marquee></a>
 
 <a class="ads">
 	<span class="ads-text">ADS</span>
@@ -2999,6 +2999,7 @@
                 navigator.serviceWorker.register("service-worker.js")
                     .then(function(reg) {
                         console.log("Yes, it did.");
+                        document.querySelector(".js-bookmark").classList.add("is-hidden");
                     }).catch(function(err) {
                         console.log("No it didn't. This happened:", err);
                     });
