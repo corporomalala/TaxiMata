@@ -324,7 +324,9 @@ body, html { width: 100%; height: 100%; }
 .u-input-hr:before,
 .u-toggle-button:active,
 .u-veil { background-color: #363636; }
-body { border-color: #363636;   }
+.content-row.is-paid .content-row-change { background: #363636 !important; }
+body,
+.content-row.is-paid .content-row-change { border-color: #363636;   }
 
 .content-row.is-error,
 .content-row.is-error .content-row-change { background-color: #c22; }
@@ -335,7 +337,9 @@ body { border-color: #363636;   }
 
 .keyboard-math-screen-hr:before,
 .u-input.header-map-row-box.is-active .u-input-hr:before { background-color: #eee; }
+.content-row.is-paid .content-row-change { border-color: #eee; }
 .bookmark,
+.content-row.is-paid .content-row-change,
 .keyboard-math .u-key-button,
 .taskbar-text,
 .u-key.d-colorBlack .u-key-button,
@@ -343,9 +347,12 @@ body { border-color: #363636;   }
 .u-input.is-active,
 .u-toggle-button:active { color: #eee; }
 
+.content-row.is-paid,
 .content-row-change,
 .header,
 .keyboard-body { background: linear-gradient(318.32deg, #c3d1e4 0%, #dde7f3 55%, #d4e0ed 100%); }
+
+.content-row .content-row-change { border-color: transparent; }
 /*** END COLORS ***/
 
 /*** FONTS ***/
@@ -389,11 +396,19 @@ body, html { font-family: "Impact"; }
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.content-row.is-paid .content-row-change-icon { background-image: url("/assets/images/icon_check_mono.png"); }
+.content-row.is-paid .content-row-change-icon {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 /*** END MEDIA ***/
 
 /*** UTILITIES ***/
 .u-input.is-delete {
     width: 1.5em;
+    width: 1.75em;
     padding: 0 .125em;
 }
 .u-input.is-delete .u-input-icon {
@@ -483,6 +498,7 @@ body, html { font-family: "Impact"; }
     .u-key-button { border-radius: 5em; }
 
 .ads {
+    width: 100%; height: auto;
     position: relative;
     background-color: #eee;
 }
@@ -508,7 +524,19 @@ body, html { font-family: "Impact"; }
     overflow: hidden;
 }
 .content-row-change {
+    border-width: 0 0 .25em 0; border-style: solid;
 }
+/*
+.content-row-change {
+    position: relative;
+}
+.content-row-change-icon {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: block;
+    z-index: 1000;
+}
+*/
 
 .header,
 .taskbar {
@@ -569,7 +597,7 @@ body, html { font-family: "Impact"; }
 .u-toggle-button-icon { visibility: hidden; }
 #chkbx4distanceLogo:checked ~ .content .u-toggle-button-icon { visibility: visible; }
 
-.content-row.is-disabled,
+.content-row.is-erased,
 .keyboard-body-menu-aside,
 #chkbx4calculator:checked ~ .keyboard .keyboard-body-menu-button.to-open { display: none; }
 .content-row.is-active,
@@ -674,10 +702,12 @@ body {
     max-width: 40em;
     margin: 0 auto;
 }
-.ads { min-height: 3em; }
+.ads { height: 3em !important; }
 .is-hidden {
     display: none !important;
 }
+
+.u-toggle-button-icon {// display: none !important; }
 /*** END HACKS ***/
 
 /*** SANDBOX ***/

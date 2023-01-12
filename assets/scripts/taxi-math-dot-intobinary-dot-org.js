@@ -3,12 +3,13 @@
 /*** OBJECTS AND VARIABLES */
 var chkbx4calculator = document.querySelector("#chkbx4calculator"),
 	chkbx4trips = document.querySelector("#chkbx4routes"),
-	chkbxs4prices = document.querySelectorAll(".chkbx4toggle"),
+	chkbxs4prices = document.querySelectorAll(".js-chkbx4toggle"),
 	inputsMoney = document.querySelectorAll(".js-input-money"),
 	inputsPeople = document.querySelectorAll(".js-input-people"),
 	inputShortTrip = document.querySelector(".js-input-shortTrip"),
 	inputLongTrip = document.querySelector(".js-input-longTrip"),
 	tags4Delete = document.querySelectorAll(".js-delete"),
+	tags4Change = document.querySelectorAll(".js-change"),
 	contentsDistance = document.querySelectorAll(".js-toggle"),
 	tagTotal = document.querySelector(".js-total"),
 	tagRefresh = document.querySelector(".js-refresh"),
@@ -45,6 +46,9 @@ tagRefresh.addEventListener("click", jsRefresh);
 for (var i = 0; i < tags4Delete.length; i++) {
   tags4Delete[i].addEventListener("click", deleteButtonClicked);
 }
+for (var i = 0; i < tags4Change.length; i++) {
+ tags4Change[i].addEventListener("click", changeButtonClicked);
+}
 
 keyboardEqual.addEventListener("click", keyboardEqualClicked);
 keyboardDelete.addEventListener("click", keyboardDeleteClicked);
@@ -67,13 +71,13 @@ for (var i = 0; i < contentsDistance.length; i++) {
 function addRow() {
 	resetActiveScreens();
 
-	if(document.querySelectorAll(".js-row.is-empty")[0].classList.contains("is-disabled")) {
-		document.querySelectorAll(".js-row.is-disabled.is-empty")[0].classList.remove("is-disabled");
+	if(document.querySelectorAll(".js-row.is-empty")[0].classList.contains("is-erased")) {
+		document.querySelectorAll(".js-row.is-erased.is-empty")[0].classList.remove("is-erased");
 	}
 
 	/*
 	var rowClone = rowTemplate.cloneNode(true);
-	rowClone.classList.remove("is-template", "is-disabled");
+	rowClone.classList.remove("is-template", "is-erased");
 
 	document.querySelector(".content").prepend(rowClone);
 	*/
@@ -88,9 +92,12 @@ function resetActiveScreens() {
 function keyboardScreenChanged() {
 	resetActiveScreens();
 
-	screen = this.querySelector(".u-input-box");
-	this.classList.add("is-active");
-	this.classList.add("is-clicked");
+	var thisRow = this.closest(".js-row");
+	if(!thisRow.classList.contains("is-paid")) {
+		screen = this.querySelector(".u-input-box");
+		this.classList.add("is-active");
+		this.classList.add("is-clicked");
+	}
 }
 function contentsDistanceToggled() {
 //	this.classList.remove("is-active");
@@ -120,7 +127,9 @@ function calculateAll() {
 			else {
 				row.classList.remove("is-error");
 
-				total += (people * taxiFare);
+				if(row.classList.contains("is-paid")) {
+					total += (people * taxiFare);
+				}
 			}
 
 			if((change == null) || (isNaN(change))) { change = ""; }
@@ -267,8 +276,23 @@ function deleteButtonClicked() {
 
 	var thisRow = this.closest(".js-row");
 
-	if(!thisRow.classList.contains("is-empty")){
+	if((!thisRow.classList.contains("is-empty")) && (!thisRow.classList.contains("is-paid"))){
 		thisRow.classList.add("is-deleted");
+	}
+
+	calculateAll();
+}
+function changeButtonClicked() {
+	resetActiveScreens();
+
+	var thisRow = this.closest(".js-row");
+
+	if((!thisRow.classList.contains("is-empty")) && (!thisRow.classList.contains("is-paid")) && (!thisRow.classList.contains("is-error"))){
+		thisRow.classList.add("is-paid");
+		thisRow.querySelector(".js-chkbx4toggle").disabled = true;
+	} else if(thisRow.classList.contains("is-paid")) {
+		thisRow.classList.remove("is-paid");
+		thisRow.querySelector(".js-chkbx4toggle").disabled = false;
 	}
 
 	calculateAll();
