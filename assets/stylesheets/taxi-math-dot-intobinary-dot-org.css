@@ -397,9 +397,9 @@ body, html { font-family: "Impact"; }
     background-position: center;
 }
 
-.content-row.is-paid .content-row-change-icon { background-image: url("/assets/images/icon_check_mono.png"); }
-.content-row.is-paid .content-row-change-icon {
-    background-size: cover;
+.content-row.is-paid .content-row-change:before { background-image: url("/assets/images/icon_check_colors.png"); }
+.content-row.is-paid .content-row-change:before {
+    background-size: auto 75%;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -458,7 +458,6 @@ body, html { font-family: "Impact"; }
 .u-veil {
     position: absolute; bottom: 0; left: 0;
     width: 100%; height: 100%;
-    opacity: .9;
 }
 /*** END UTILITIES ***/
 
@@ -526,17 +525,16 @@ body, html { font-family: "Impact"; }
 .content-row-change {
     border-width: 0 0 .25em 0; border-style: solid;
 }
-/*
 .content-row-change {
     position: relative;
 }
-.content-row-change-icon {
+.content-row-change:before {
+    content: "";
     position: absolute; top: 0; left: 0;
     width: 100%; height: 100%;
     display: block;
-    z-index: 1000;
+    opacity: .5;
 }
-*/
 
 .header,
 .taskbar {
@@ -590,6 +588,7 @@ body, html { font-family: "Impact"; }
 /*** END COMPONENTS ***/
 
 /*** INTERRACTIVITY ***/
+.content-row-change,
 .u-input,
 .u-toggle-button,
 .u-key-button { cursor: pointer; }
