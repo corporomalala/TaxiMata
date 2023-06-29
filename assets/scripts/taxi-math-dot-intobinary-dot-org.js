@@ -11,7 +11,8 @@ var chkbx4calculator = document.querySelector("#chkbx4calculator"),
 	tags4Delete = document.querySelectorAll(".js-delete"),
 	tags4Change = document.querySelectorAll(".js-change"),
 	contentsDistance = document.querySelectorAll(".js-toggle"),
-	tagTotal = document.querySelector(".js-total"),
+	tagTotalMoney = document.querySelector(".js-totalMoney"),
+	tagTotalPeople = document.querySelector(".js-totalPeople"),
 	tagRefresh = document.querySelector(".js-refresh"),
 	tagAddRow = document.querySelector(".js-add"),
 	rowTemplate = document.querySelector(".js-row.is-template"),
@@ -93,7 +94,14 @@ function keyboardScreenChanged() {
 	resetActiveScreens();
 
 	var thisRow = this.closest(".js-row");
-	if(!thisRow.classList.contains("is-paid")) {
+	if(thisRow) {
+		if(!thisRow.classList.contains("is-paid")) {
+			screen = this.querySelector(".u-input-box");
+			this.classList.add("is-active");
+			this.classList.add("is-clicked");
+		}
+	} else {
+		thisRow = this.closest(".js-tabs");
 		screen = this.querySelector(".u-input-box");
 		this.classList.add("is-active");
 		this.classList.add("is-clicked");
@@ -104,7 +112,7 @@ function contentsDistanceToggled() {
 }
 
 function calculateAll() {
-	var change = 0, total = 0,
+	var change = 0, totalMoney = 0, totalPeople = 0,
 		money = 0, people = 0,
 		taxiFare = 0,
 		rows = document.querySelectorAll(".js-row"),
@@ -128,19 +136,27 @@ function calculateAll() {
 				row.classList.remove("is-error");
 
 				if(row.classList.contains("is-paid")) {
-					total += (people * taxiFare);
+					totalMoney += (people * taxiFare);
+					totalPeople += people;
 				}
 			}
 
 			if((change == null) || (isNaN(change))) { change = ""; }
-			if((total == null) || (isNaN(total))) { total = "calculating..."; }
+			if((totalMoney == null) || (isNaN(totalMoney))) { totalMoney = "calculating..."; }
+			if((totalPeople == null) || (isNaN(totalPeople))) { totalPeople = "calculating..."; }
 
 			row.querySelector(".js-change").innerHTML = jsSanitizeMoney("output", change);
 		}
 	}
-//	tagTotal.innerHTML = total;
-	tagTotal.innerHTML = jsSanitizeMoney("output", total);
 
+//	tagTotalMoney.innerHTML = totalMoney;
+	tagTotalMoney.innerHTML = jsSanitizeMoney("output", totalMoney);
+
+	tagTotalPeople.innerHTML = "";
+	if(totalPeople > 0) { 
+		if(totalPeople == 1) { tagTotalPeople.innerHTML = "(" + totalPeople + " person)"; }
+		if(totalPeople > 1) { tagTotalPeople.innerHTML = "(" + totalPeople + " people)"; }
+	}
 }
 function jsToggleClass(className, tagName) {
 	if(tagName.classList.contains(className)) { tagName.classList.remove(className); }
