@@ -27,6 +27,10 @@ var mathScreen = document.querySelector('.js-math-screen'),
 /*** END OBJECTS AND VARIABLES */
 
 /*** SETUP ***/
+	/*** reset ***/
+	window.onbeforeunload = function(){
+		return "AAA";
+	}
 /*** END SETUP ***/
 
 /*** EVENTS ***/
